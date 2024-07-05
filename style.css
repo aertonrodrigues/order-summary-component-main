@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+:root {
+  font-size: 62.5%;
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Paleblue);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  background-color: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  max-width: 450px;
+
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  justify-content: center;
+}
+
+.titulo-texto {
+  text-align: center;
+
+}
+
+.titulo-texto h1 {
+  color: var(--Darkblue);
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+
+}
+
+.titulo-texto p {
+  font-weight: 500;
+  color: var(--Desaturatedblue);
+  padding: 0 1.5rem;
+  line-height: 1.25;
+}
+
+.plan {
+  display: flex;
+  background-color: var(--Verypaleblue);
+  justify-content: space-between;
+  padding: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  align-items: center;
+  margin: 2rem 0;
+
+}
+
+
+.annual {
+  transform: translateX(-3rem);
+}
+
+.plan a {
+  color: var(--Brightblue);
+  font-weight: 650;
+}
+
+.plan a:hover {
+  text-decoration: none;
+  color: hsl(258, 80%, 63%);
+}
+
+
+.proceed {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  background-color: var(--Brightblue);
+  color: white;
+  font-weight: 650;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  box-shadow: 2px 15px 40px hsl(245, 75%, 75%);
+
+}
+
+.proceed:hover {
+  animation: animacao 0.2s forwards;
+
+
+}
+
+@keyframes animacao {
+  0% {
+    background-color: var(--Brightblue);
+  }
+
+  100% {
+    background-color: hsl(258, 80%, 63%);
+  }
+}
+
+.div-cancel {
+  text-align: center;
+}
+
+.cancel {
+
+  text-decoration: none;
+  color: var(--Darkblue);
+  margin-top: 1.5rem;
+  font-weight: 650;
+
+}
+
+.cancel:hover {
+  font-weight: 900;
+}
